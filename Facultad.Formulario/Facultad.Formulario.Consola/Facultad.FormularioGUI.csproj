@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Formularios.Libreria\Formularios.Libreria.csproj">
+      <Project>{60662857-cde1-4967-a917-07afa701bd81}</Project>
+      <Name>Formularios.Libreria</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

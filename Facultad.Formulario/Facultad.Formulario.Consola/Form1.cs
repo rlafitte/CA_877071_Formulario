@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Formularios.Libreria;
 
 namespace Facultad.Formulario.Consola
 {
@@ -17,10 +18,10 @@ namespace Facultad.Formulario.Consola
             InitializeComponent();
         }
 
-        private string Display (string nombre, string apellido)
-        {
-            return $"{apellido}, {nombre}";
-        }
+        //private string Display (Persona p)
+        //{
+        //    return $"{apellido}, {nombre}";
+        //}
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -28,13 +29,38 @@ namespace Facultad.Formulario.Consola
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Display(txtApellido.Text,txtNombre.Text));
+            try
+            {
+                Validar();
+            Persona p = new Persona(txtNombre.Text, txtApellido.Text);
+            MessageBox.Show(p.ToString());
             Limpiar();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void Limpiar()
         {
             txtApellido.Text = string.Empty;
             txtNombre.Text = string.Empty;
+        }
+        private void Validar()
+        {
+            if (txtNombre.Text == string.Empty && txtApellido.Text == string.Empty)
+            {
+                throw new Exception("Nombre y apellido no pueden estar vacíos");
+            }
+            if (txtNombre.Text == string.Empty)
+            {
+                throw new Exception("Nombre no puede estar vacío");
+            }
+            if (txtApellido.Text == string.Empty)
+            {
+                throw new Exception("Apellido no puede estar vacío");
+            }
         }
     }
 }
