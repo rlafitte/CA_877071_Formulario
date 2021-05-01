@@ -30,36 +30,47 @@ namespace Facultad.Formulario.Consola
         private void InitializeComponent()
         {
             this.btnShow = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnShow
             // 
             this.btnShow.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnShow.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnShow.Location = new System.Drawing.Point(37, 38);
+            this.btnShow.Location = new System.Drawing.Point(226, 110);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 23);
             this.btnShow.TabIndex = 0;
             this.btnShow.Text = "Mostrar";
             this.btnShow.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(226, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNombre.Location = new System.Drawing.Point(226, 40);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Text = "Nombre";
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(226, 75);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 2;
+            this.txtApellido.Text = "Apellido";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnShow);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Formularo para mostrar nombre";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -69,7 +80,8 @@ namespace Facultad.Formulario.Consola
         #endregion
 
         private System.Windows.Forms.Button btnShow; //esto se agrega automáticamente al crear un nuevo botón
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellido;
     }
 }
 
