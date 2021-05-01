@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Facultad.Formulario.Consola
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form //esta es la otra partial class. Todos los form que declaremos son heredados de Form
     {
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
