@@ -1,0 +1,10 @@
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\bin\Debug\Facultad.Formulario.Consola.exe.config
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\bin\Debug\Facultad.Formulario.Consola.exe
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\bin\Debug\Facultad.Formulario.Consola.pdb
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.FormularioGUI.csprojAssemblyReference.cache
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.Formulario.Consola.Form1.resources
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.Formulario.Consola.Properties.Resources.resources
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.FormularioGUI.csproj.GenerateResource.cache
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.FormularioGUI.csproj.CoreCompileInputs.cache
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.Formulario.Consola.exe
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.Formulario.Consola.pdb

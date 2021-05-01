@@ -17,9 +17,18 @@ namespace Facultad.Formulario.Consola
             InitializeComponent();
         }
 
+        private string Display (string nombre, string apellido)
+        {
+            return $"{apellido}, {nombre}";
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Display(txtApellido.Text,txtNombre.Text));
         }
     }
 }
