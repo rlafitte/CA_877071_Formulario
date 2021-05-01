@@ -29,6 +29,12 @@ namespace Facultad.Formulario.Consola
         private void btnShow_Click(object sender, EventArgs e)
         {
             MessageBox.Show(Display(txtApellido.Text,txtNombre.Text));
+            Limpiar();
+        }
+        private void Limpiar()
+        {
+            txtApellido.Text = string.Empty;
+            txtNombre.Text = string.Empty;
         }
     }
 }
