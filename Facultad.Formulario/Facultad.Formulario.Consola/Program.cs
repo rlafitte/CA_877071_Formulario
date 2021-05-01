@@ -15,8 +15,11 @@ namespace Facultad.Formulario.Consola
         static void Main()
         {
             Application.EnableVisualStyles();
+            
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            Form1 formulario = new Form1(); //clase que representa una "ventana"
+            Application.Run(formulario); //acá reemplazamos el valor original por nuestro nuevo Form1
         }
     }
 }
