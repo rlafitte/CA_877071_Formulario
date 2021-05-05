@@ -11,15 +11,27 @@ namespace Formularios.Libreria
     {
         private string _nombre;
         private string _apellido;
+        private bool _activo;
+        private string _estadoCivil;
 
-        public Persona(string nombre, string apellido)
+
+        public Persona(string nombre, string apellido, string estado, bool activo)
         {
             this._nombre = nombre;
             this._apellido = apellido;
+            this._activo = activo;
+            this._estadoCivil = estado;
         }
         public override string ToString()
         {
-            return $"{this._apellido}, {this._nombre}";
+            if (this._activo)
+            {
+
+            }
+                return $"{this._apellido}, {this._nombre}, {this._activo}, {this._estadoCivil}";
+            
+
+            
         }
     }
 }

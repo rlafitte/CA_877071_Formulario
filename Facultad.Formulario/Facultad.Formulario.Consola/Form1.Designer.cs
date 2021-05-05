@@ -35,13 +35,16 @@ namespace Facultad.Formulario.Consola
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.chkActivo = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnShow
             // 
             this.btnShow.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnShow.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnShow.Location = new System.Drawing.Point(226, 110);
+            this.btnShow.Location = new System.Drawing.Point(222, 174);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 23);
             this.btnShow.TabIndex = 0;
@@ -85,7 +88,7 @@ namespace Facultad.Formulario.Consola
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(99, 110);
+            this.btnVolver.Location = new System.Drawing.Point(95, 174);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 5;
@@ -93,11 +96,41 @@ namespace Facultad.Formulario.Consola
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // chkActivo
+            // 
+            this.chkActivo.AutoSize = true;
+            this.chkActivo.Location = new System.Drawing.Point(222, 140);
+            this.chkActivo.Name = "chkActivo";
+            this.chkActivo.Size = new System.Drawing.Size(56, 17);
+            this.chkActivo.TabIndex = 6;
+            this.chkActivo.Text = "Activo";
+            this.chkActivo.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(222, 103);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(123, 110);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(62, 13);
+            this.lblEstado.TabIndex = 8;
+            this.lblEstado.Text = "Estado Civil";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
@@ -122,6 +155,20 @@ namespace Facultad.Formulario.Consola
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.CheckBox chkActivo;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblEstado;
+        //public System.Windows.Forms.TextBox TxTNombre
+        //{
+        //    //get
+        //    //{
+        //    //    return txtNombre.Text;
+        //    //}
+        //    //set
+        //    //{
+        //    //    txtNombre.Text = value;
+        //    //}
+        //}
     }
 }
 

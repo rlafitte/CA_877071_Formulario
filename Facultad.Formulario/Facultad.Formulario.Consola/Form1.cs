@@ -13,8 +13,10 @@ namespace Facultad.Formulario.Consola
 {
     public partial class Form1 : Form //esta es la otra partial class. Todos los form que declaremos son heredados de Form
     {
+        private Form _principal;
         public Form1()  //dejar Form1 lo menos modificado posible
         {
+            //_principal = new Form1();
             InitializeComponent();
         }
 
@@ -25,6 +27,21 @@ namespace Facultad.Formulario.Consola
         private void Form1_Load(object sender, EventArgs e)
         {
             //MessageBox.Show("Cargo formulario");
+            CargarListas();
+        }
+        private void CargarListas()
+        {
+            CodigoDescripcion seleccion = new CodigoDescripcion(0, "Seleccione");
+            CodigoDescripcion soltero = new CodigoDescripcion(1, "Soltero");
+            CodigoDescripcion casado = new CodigoDescripcion(2, "Casado");
+            List<CodigoDescripcion> lst = new List<CodigoDescripcion>();
+            lst.Add(seleccion);
+            lst.Add(soltero);
+            lst.Add(casado);
+            this.comboBox1.DataSource = lst;
+            this.comboBox1.DisplayMember = "Descripcion";
+            this.comboBox1.ValueMember = "Cod";
+
         }
 
         private void btnShow_Click(object sender, EventArgs e)
@@ -32,7 +49,7 @@ namespace Facultad.Formulario.Consola
             try
             {
                 Validar();
-            Persona p = new Persona(txtNombre.Text, txtApellido.Text);
+            Persona p = new Persona(txtNombre.Text, txtApellido.Text, comboBox1.SelectedValue.ToString(), chkActivo.Checked);
             MessageBox.Show(p.ToString());
             Limpiar();
 
@@ -49,6 +66,10 @@ namespace Facultad.Formulario.Consola
         }
         private void Validar()
         {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                throw new Exception("Seleccione un estado civil.");
+            }
             if (txtNombre.Text == string.Empty && txtApellido.Text == string.Empty)
             {
                 throw new Exception("Nombre y apellido no pueden estar vacíos");
@@ -61,6 +82,7 @@ namespace Facultad.Formulario.Consola
             {
                 throw new Exception("Apellido no puede estar vacío");
             }
+
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
