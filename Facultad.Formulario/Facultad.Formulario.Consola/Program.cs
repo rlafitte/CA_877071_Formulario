@@ -18,7 +18,7 @@ namespace Facultad.Formulario.Consola
             
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Form1 formulario = new Form1(); //clase que representa una "ventana"
+            FrmPrincipal formulario = new FrmPrincipal(); //clase que representa una "ventana"
             Application.Run(formulario); //acá reemplazamos el valor original por nuestro nuevo Form1
         }
     }

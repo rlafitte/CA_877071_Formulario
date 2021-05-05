@@ -24,7 +24,7 @@ namespace Facultad.Formulario.Consola
         //}
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //MessageBox.Show("Cargo formulario");
         }
 
         private void btnShow_Click(object sender, EventArgs e)
@@ -61,6 +61,35 @@ namespace Facultad.Formulario.Consola
             {
                 throw new Exception("Apellido no puede estar vacío");
             }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Length > 5)
+            {
+                MessageBox.Show("Hago algo");
+            }
+        }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Layout(object sender, LayoutEventArgs e)
+        {
+            
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
         }
     }
 }

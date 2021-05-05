@@ -34,6 +34,7 @@ namespace Facultad.Formulario.Consola
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShow
@@ -54,6 +55,7 @@ namespace Facultad.Formulario.Consola
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtApellido
             // 
@@ -70,6 +72,7 @@ namespace Facultad.Formulario.Consola
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // lblApellido
             // 
@@ -80,11 +83,22 @@ namespace Facultad.Formulario.Consola
             this.lblApellido.TabIndex = 4;
             this.lblApellido.Text = "Apellido";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(99, 110);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 5;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtApellido);
@@ -93,6 +107,8 @@ namespace Facultad.Formulario.Consola
             this.Name = "Form1";
             this.Text = "Formularo para mostrar nombre";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
+            this.Layout += new System.Windows.Forms.LayoutEventHandler(this.Form1_Layout);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +121,7 @@ namespace Facultad.Formulario.Consola
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Button btnVolver;
     }
 }
 
