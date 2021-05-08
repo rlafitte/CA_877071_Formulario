@@ -39,6 +39,7 @@ namespace Formularios.Libreria
         public override string ToString()
         {
             string act;
+            string est;
             if (this.Activo)
             {
                 act = "Activo";
@@ -47,7 +48,21 @@ namespace Formularios.Libreria
             {
                 act = "Inactivo";
             }
-                return $"{this._apellido}, {this._nombre}, {act}, {this._estadoCivil}";
+            if (this._estadoCivil == "1")
+            {
+                est = "Soltero";
+            }
+            else if(this._estadoCivil == "2")
+            {
+                est = "Casado";
+            }
+            else
+            {
+                est = "Otros";
+            }
+            
+                //return $"{this._apellido}, {this._nombre}, {act}, {this._estadoCivil}";
+                return $"{this._apellido}, {this._nombre}, {act}, {est}";
             
 
             

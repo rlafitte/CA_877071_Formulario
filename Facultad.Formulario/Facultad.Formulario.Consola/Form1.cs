@@ -91,10 +91,10 @@ namespace Facultad.Formulario.Consola
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Length > 5)
-            {
-                MessageBox.Show("Hago algo");
-            }
+            //if (txtNombre.Text.Length > 5)
+            //{
+            //    MessageBox.Show("Hago algo");
+            //}
         }
 
         private void lblNombre_Click(object sender, EventArgs e)
