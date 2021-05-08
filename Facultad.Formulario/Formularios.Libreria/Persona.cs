@@ -22,13 +22,22 @@ namespace Formularios.Libreria
             this._activo = activo;
             this._estadoCivil = estado;
         }
+        public Persona()
+        {
+
+        }
         public override string ToString()
         {
+            string act;
             if (this._activo)
             {
-
+                act = "Activo";
             }
-                return $"{this._apellido}, {this._nombre}, {this._activo}, {this._estadoCivil}";
+            else
+            {
+                act = "Inactivo";
+            }
+                return $"{this._apellido}, {this._nombre}, {act}, {this._estadoCivil}";
             
 
             

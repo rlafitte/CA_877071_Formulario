@@ -14,9 +14,12 @@ namespace Facultad.Formulario.Consola
     public partial class Form1 : Form //esta es la otra partial class. Todos los form que declaremos son heredados de Form
     {
         private Form _principal;
+        private List<Persona> _personas;
         public Form1()  //dejar Form1 lo menos modificado posible
         {
             //_principal = new Form1();
+            
+            _personas = new List<Persona>();
             InitializeComponent();
         }
 
