@@ -65,6 +65,8 @@ namespace Facultad.Formulario.Consola
             seleccionada.Activo = false;
             MessageBox.Show(seleccionada.ToString());
             //MessageBox.Show(lstClientes.SelectedValue.ToString()); //esto es para mostrar el objeto completo
+
+                // si quisiera borrar un objeto, paso el selected value a "seleccionada" y luego hago _personas.Remove(seleccionada)
             }
         }
     }
