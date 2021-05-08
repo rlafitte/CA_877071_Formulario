@@ -52,7 +52,8 @@ namespace Facultad.Formulario.Consola
             try
             {
                 Validar();
-            Persona p = new Persona(txtNombre.Text, txtApellido.Text, comboBox1.SelectedValue.ToString(), chkActivo.Checked);
+            Persona p = new Cliente(1, txtNombre.Text, txtApellido.Text, comboBox1.SelectedValue.ToString(), chkActivo.Checked);
+                _personas.Add(p);
             MessageBox.Show(p.ToString());
             Limpiar();
 
@@ -115,6 +116,17 @@ namespace Facultad.Formulario.Consola
         {
             this.Owner.Show();
             this.Close();
+        }
+
+        private void txtLista_Click(object sender, EventArgs e)
+        {
+            FrmListaClientes frmLista = new FrmListaClientes(this, _personas);
+            frmLista.Show();
+            this.Hide();
+        }
+        public void ShowListar(FrmListaClientes frm)
+        {
+
         }
     }
 }

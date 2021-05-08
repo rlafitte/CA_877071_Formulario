@@ -3,4 +3,3 @@ C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\F
 C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Formularios.Libreria\obj\Debug\Formularios.Libreria.csproj.CoreCompileInputs.cache
 C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Formularios.Libreria\obj\Debug\Formularios.Libreria.dll
 C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Formularios.Libreria\obj\Debug\Formularios.Libreria.pdb
-C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Formularios.Libreria\obj\Debug\Formularios.Libreria.csprojAssemblyReference.cache

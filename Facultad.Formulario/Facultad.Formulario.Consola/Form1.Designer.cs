@@ -38,6 +38,7 @@ namespace Facultad.Formulario.Consola
             this.chkActivo = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
+            this.txtLista = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShow
@@ -108,6 +109,7 @@ namespace Facultad.Formulario.Consola
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(222, 103);
             this.comboBox1.Name = "comboBox1";
@@ -123,11 +125,22 @@ namespace Facultad.Formulario.Consola
             this.lblEstado.TabIndex = 8;
             this.lblEstado.Text = "Estado Civil";
             // 
+            // txtLista
+            // 
+            this.txtLista.Location = new System.Drawing.Point(222, 217);
+            this.txtLista.Name = "txtLista";
+            this.txtLista.Size = new System.Drawing.Size(75, 23);
+            this.txtLista.TabIndex = 9;
+            this.txtLista.Text = "Mostrar Lista";
+            this.txtLista.UseVisualStyleBackColor = true;
+            this.txtLista.Click += new System.EventHandler(this.txtLista_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtLista);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.chkActivo);
@@ -158,6 +171,7 @@ namespace Facultad.Formulario.Consola
         private System.Windows.Forms.CheckBox chkActivo;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Button txtLista;
         //public System.Windows.Forms.TextBox TxTNombre
         //{
         //    //get

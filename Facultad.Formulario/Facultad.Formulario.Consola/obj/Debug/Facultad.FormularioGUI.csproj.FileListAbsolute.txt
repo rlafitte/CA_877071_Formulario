@@ -12,3 +12,4 @@ C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\F
 C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\bin\Debug\Formularios.Libreria.pdb
 C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.FormularioGUI.csproj.CopyComplete
 C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.Formulario.Consola.FrmPrincipal.resources
+C:\Users\renar\Desktop\CAI\Formulario\CA_877071_Formulario\Facultad.Formulario\Facultad.Formulario.Consola\obj\Debug\Facultad.Formulario.Consola.FrmListaClientes.resources
